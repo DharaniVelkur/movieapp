@@ -13,6 +13,7 @@ const Home = () => {
    <Popular com="popular"  />
    <Popular com="top_rated"/>
    <Popular com="upcoming" />
+   <Popular com="now_playing" />
     </>
   );
 };

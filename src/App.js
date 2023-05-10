@@ -5,6 +5,8 @@ import Home from './components/Home';
 import MovieList from './components/MovieList';
 import { SkeletonTheme } from 'react-loading-skeleton';
 import "react-loading-skeleton/dist/skeleton.css";
+import Contact from './components/Contact';
+import About from './components/About';
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
       <Routes>
         <Route index element={<Home/>}></Route>
         <Route exact path='movie/:movieid' element={<MovieList/>}></Route>
+        <Route exact path='/about' element={<About/>}></Route>
+        <Route exact path='/contact' element={<Contact/>}></Route>
+
         {/* <Route exact path='movies/:movietype' element={<MovieList/>}></Route> */}
         <Route exact path='/*' element={<h1>Error page</h1>}></Route>
       </Routes>
